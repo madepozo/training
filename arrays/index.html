@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Working with Arrays in Javascript</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3em;
+				margin: 8px;
+      }
+      .container {
+        padding: 20px;
+      }
+      p {
+        font-size: 30px;
+        padding-left: 20px;
+				margin: 10px 0;
+      }
+      ul {
+        padding: 0 40px;
+        margin: 0;
+        list-style: square;
+      }
+      ul li {
+        font-size: 32px;
+        margin: 12px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        width: 150px;
+      }
+      ul li:hover {
+        color: #838183;
+      }
+      .methods,
+      .console {
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;
+        box-sizing: border-box;
+      }
+      .console {
+        border: 1px solid #333;
+				color: #4f67c7;
+        display: inline-block;
+				font-size: 24px;
+        height: 250px;
+        position: relative;;
+				padding: 1em;
+      }
+			.console .message {
+				font-size: 16px;
+				display: block;
+				color: #838182;
+				margin: 10px 0px;
+			}
+      .console:before {
+        bottom: 103%;
+        content: 'Consola';
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 22px;
+        position: absolute;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Arrays in Javascript</h1>
+    <div class="container">
+      <p>Example: <span class="example">[1, 2, 3, 4, 5]</span></p>
+      <ul class="methods">
+				<li class="method" data-method="join" data-message="Concatena los elementos utilizando el segundo parámetro como separador, por defecto usa el espacio en blanco.">
+					Join
+				</li>
+				<li class="method" data-method="push" data-message="Agrega uno o más elementos a partir del final del arreglo, y retorna el nuevo length.">
+					Push
+				</li>
+				<li class="method" data-method="pop" data-message="Retira el ùltimo elemento del arreglo, devolviendo ese valor.">
+					Pop
+				</li>
+				<li class="method" data-method="unshift" data-message="Agrega un elemento al inciio del arreglo, y retorna el nuevo length.">
+					Unshift
+				</li>
+				<li class="method" data-method="shift" data-message="Retira el primer elemento del arreglo, devolviendo ese valor.">
+					Shift
+				</li>
+				<li class="method" data-method="slice" data-message="Crea un copia del arreglo, para ello requiere de un parámetro de inicio y uno despues del final del corte, por defecto sino se le pasa parámetros hará una copia completa del arreglo.">
+					Slice
+				</li>
+				<li class="method" data-method="splice" data-message="Hace un corte al arreglo, afectando directamente en él, para ello requiere un parámetro de inicio y la cantidad de elementos e cortar, un tecer parámetro es opcional, el cual será agregado en la posición de inicio indicado.">
+					Splice
+				</li>
+			</ul>
+			<div class="console">
+				<span class="message">Haz click sobre un método de la lista</span>
+			</div>
+		</div>
+		<script src="./array.js"></script>
+	</body>
+</html>
